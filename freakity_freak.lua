@@ -134,7 +134,7 @@ function Update:Notify(desc)
 	Title.Position = UDim2.new(0, 55, 0, 14);
 	Title.Size = UDim2.new(0, 10, 0, 20);
 	Title.Font = Enum.Font.GothamBold;
-	Title.Text = "Melody";
+	Title.Text = "Eclipse";
 	Title.TextColor3 = Color3.fromRGB(255, 255, 255);
 	Title.TextSize = 16;
 	Title.TextXAlignment = Enum.TextXAlignment.Left;
@@ -215,7 +215,7 @@ function Update:StartLoad()
 	LoadingBarBackground.ZIndex = 2;
 	local LoadingBar = Instance.new("Frame");
 	LoadingBar.Parent = LoadingBarBackground;
-	LoadingBar.BackgroundColor3 = Color3.fromRGB(255, 0, 0);
+	LoadingBar.BackgroundColor3 = Color3.fromRGB(0, 255, 0);
 	LoadingBar.Size = UDim2.new(0, 0, 1, 0);
 	LoadingBar.ZIndex = 3;
 	CreateRounded(LoadingBarBackground, 20);
@@ -339,7 +339,7 @@ function Update:Window(Config)
 	Main.Parent = OutlineMain;
 	Main.ClipsDescendants = true;
 	Main.AnchorPoint = Vector2.new(0.5, 0.5);
-	Main.BackgroundColor3 = Color3.fromRGB(24, 24, 26);
+	Main.BackgroundColor3 = Color3.fromRGB(0, 56, 229);
 	Main.BackgroundTransparency = 0;
 	Main.Position = UDim2.new(0.5, 0, 0.5, 0);
 	Main.Size = WindowConfig.Size;
@@ -364,7 +364,7 @@ function Update:Window(Config)
 	local Top = Instance.new("Frame");
 	Top.Name = "Top";
 	Top.Parent = Main;
-	Top.BackgroundColor3 = Color3.fromRGB(10, 10, 10);
+	Top.BackgroundColor3 = Color3.fromRGB(13, 9, 50);
 	Top.Size = UDim2.new(1, 0, 0, 40);
 	Top.BackgroundTransparency = 0;
 	CreateRounded(Top, 5);
