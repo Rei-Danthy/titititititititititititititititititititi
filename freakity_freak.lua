@@ -339,7 +339,7 @@ function Update:Window(Config)
 	Main.Parent = OutlineMain;
 	Main.ClipsDescendants = true;
 	Main.AnchorPoint = Vector2.new(0.5, 0.5);
-	Main.BackgroundColor3 = Color3.fromRGB(51, 218, 239);
+	Main.BackgroundColor3 = Color3.fromRGB(13, 9, 50);
 	Main.BackgroundTransparency = 0;
 	Main.Position = UDim2.new(0.5, 0, 0.5, 0);
 	Main.Size = WindowConfig.Size;
