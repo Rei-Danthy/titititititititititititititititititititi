@@ -2,9 +2,9 @@ if (game:GetService("CoreGui")):FindFirstChild("LUNAR") and (game:GetService("Co
 	(game:GetService("CoreGui")).LUNAR:Destroy();
 	(game:GetService("CoreGui")).ScreenGui:Destroy();
 end;
-_G.Primary = Color3.fromRGB(100, 100, 100);
-_G.Dark = Color3.fromRGB(22, 22, 26);
-_G.Third = Color3.fromRGB(255, 0, 0);
+_G.Primary = Color3.fromRGB(162, 255, 248);
+_G.Dark = Color3.fromRGB(12, 8, 75);
+_G.Third = Color3.fromRGB(51, 218, 239);
 function CreateRounded(Parent, Size)
 	local Rounded = Instance.new("UICorner");
 	Rounded.Name = "Rounded";
