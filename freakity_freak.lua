@@ -215,7 +215,7 @@ function Update:StartLoad()
 	LoadingBarBackground.ZIndex = 2;
 	local LoadingBar = Instance.new("Frame");
 	LoadingBar.Parent = LoadingBarBackground;
-	LoadingBar.BackgroundColor3 = Color3.fromRGB(0, 255, 0);
+	LoadingBar.BackgroundColor3 = Color3.fromRGB(0, 0, 255);
 	LoadingBar.Size = UDim2.new(0, 0, 1, 0);
 	LoadingBar.ZIndex = 3;
 	CreateRounded(LoadingBarBackground, 20);
@@ -329,7 +329,7 @@ function Update:Window(Config)
 	OutlineMain.Parent = LUNAR;
 	OutlineMain.ClipsDescendants = true;
 	OutlineMain.AnchorPoint = Vector2.new(0.5, 0.5);
-	OutlineMain.BackgroundColor3 = Color3.fromRGB(30, 30, 30);
+	OutlineMain.BackgroundColor3 = Color3.fromRGB(117, 242, 239);
 	OutlineMain.BackgroundTransparency = 0.4;
 	OutlineMain.Position = UDim2.new(0.5, 0, 0.45, 0);
 	OutlineMain.Size = UDim2.new(0, 0, 0, 0);
@@ -339,7 +339,7 @@ function Update:Window(Config)
 	Main.Parent = OutlineMain;
 	Main.ClipsDescendants = true;
 	Main.AnchorPoint = Vector2.new(0.5, 0.5);
-	Main.BackgroundColor3 = Color3.fromRGB(0, 56, 229);
+	Main.BackgroundColor3 = Color3.fromRGB(51, 218, 239);
 	Main.BackgroundTransparency = 0;
 	Main.Position = UDim2.new(0.5, 0, 0.5, 0);
 	Main.Size = WindowConfig.Size;
