@@ -99,7 +99,7 @@ spawn(function()
 	end;
 end);
 local Update = {};
-function Update:Notify(desc)
+function Update:Notify(notifyTitle, Desc, Icon)
 	local Frame = Instance.new("Frame");
 	local Image = Instance.new("ImageLabel");
 	local Title = Instance.new("TextLabel");
@@ -127,14 +127,14 @@ function Update:Notify(desc)
 	Image.BackgroundTransparency = 1;
 	Image.Position = UDim2.new(0, 8, 0, 8);
 	Image.Size = UDim2.new(0, 45, 0, 45);
-	Image.Image = "rbxassetid://105059922903197";
+	Image.Image = Icon;
 	Title.Parent = Frame;
 	Title.BackgroundColor3 = _G.Primary;
 	Title.BackgroundTransparency = 1;
 	Title.Position = UDim2.new(0, 55, 0, 14);
 	Title.Size = UDim2.new(0, 10, 0, 20);
 	Title.Font = Enum.Font.GothamBold;
-	Title.Text = "Eclipse";
+	Title.Text = notifyTitle;
 	Title.TextColor3 = Color3.fromRGB(255, 255, 255);
 	Title.TextSize = 16;
 	Title.TextXAlignment = Enum.TextXAlignment.Left;
@@ -145,7 +145,7 @@ function Update:Notify(desc)
 	Desc.Size = UDim2.new(0, 10, 0, 10);
 	Desc.Font = Enum.Font.GothamSemibold;
 	Desc.TextTransparency = 0.3;
-	Desc.Text = desc;
+	Desc.Text = Desc;
 	Desc.TextColor3 = Color3.fromRGB(200, 200, 200);
 	Desc.TextSize = 12;
 	Desc.TextXAlignment = Enum.TextXAlignment.Left;
